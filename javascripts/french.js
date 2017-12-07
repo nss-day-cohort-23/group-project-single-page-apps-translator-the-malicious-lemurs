@@ -1,5 +1,7 @@
 "use strict";
 
+const printPhrase = require('./printtodom');
+
 let frenchObj = {
     Merry: "Joyeux",
     Christmas: "Noel",
@@ -12,6 +14,6 @@ function translateToFrench(arrayEng) {
     arrayEng.forEach(function(word) {
         translatedPhrase += `${frenchObj[word]} `;
     });
-    console.log(translatedPhrase);
+    printPhrase(translatedPhrase);
 }
 module.exports = translateToFrench;

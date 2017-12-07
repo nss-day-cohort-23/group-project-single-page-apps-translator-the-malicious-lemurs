@@ -1,6 +1,8 @@
 
 "use strict";
 
+const printPhrase = require('./printtodom');
+
 
 let spanObj = {
     Merry: "Feliz" ,
@@ -15,8 +17,7 @@ function translateToSpanish(arrayEng) {
         translatedPhrase += `${spanObj[word]} `;
     });
     translatedPhrase = translatedPhrase.slice(0, -1) + "!";
-
-    console.log(translatedPhrase);
+    printPhrase(translatedPhrase);
     }
 
     
