@@ -1,8 +1,22 @@
 "use strict";
 
-function translateToSpanish(content) {
-    console.log("clicked", content);
-}
+
+let spanObj = {
+    Merry: "Feliz" ,
+    Christmas: "Navidad",
+    Harry: "Enrique",
+    Potter: "Potter"
+};
+    
+function translateToSpanish(arrayEng) {
+    let translatedPhrase = "";
+    arrayEng.forEach(function(word){
+        translatedPhrase += `${spanObj[word]} `;
+    });
+    console.log(translatedPhrase);
+    }
+
+    
 
 module.exports = translateToSpanish;
 
