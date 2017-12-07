@@ -1,5 +1,7 @@
 "use strict";
 
+const printPhrase = require('./printtodom');
+
 
 let russianObj = {
     Merry: "Merri",
@@ -13,7 +15,7 @@ function translateToRussian (arrayEng){
     arrayEng.forEach(function(word){
         translatedPhrase += `${russianObj[word]} `;
     });
-    console.log(translatedPhrase);
+    printPhrase(translatedPhrase);
 
     }
 
