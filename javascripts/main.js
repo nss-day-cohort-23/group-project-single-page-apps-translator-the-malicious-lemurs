@@ -1,9 +1,9 @@
 "use strict";
 
-const russianTrans = require('./russian'); 
+// const russianTrans = require('./russian'); 
 const spanishTrans = require('./spanish'); 
 const portugueseTrans = require('./portuguese'); 
-const frenchTrans = require('./french'); 
+// const frenchTrans = require('./french'); 
 
 
 
@@ -11,7 +11,7 @@ let transBtn = document.getElementById("trans");
 let radioBtns = document.getElementsByClassName("radio");
 
 
-let funcArray = [russianTrans, spanishTrans, portugueseTrans, frenchTrans];
+let funcArray = ["russianTrans", spanishTrans, portugueseTrans, "frenchTrans"];
 
 
 transBtn.addEventListener("click", function() {
