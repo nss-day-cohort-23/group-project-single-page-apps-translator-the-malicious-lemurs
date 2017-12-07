@@ -5,7 +5,7 @@ let spanObj = {
     Merry: "Feliz" ,
     Christmas: "Navidad",
     Harry: "Enrique",
-    Potter: "Potter"
+    Potter: "Papas"
 };
     
 function translateToSpanish(arrayEng) {
@@ -13,6 +13,8 @@ function translateToSpanish(arrayEng) {
     arrayEng.forEach(function(word){
         translatedPhrase += `${spanObj[word]} `;
     });
+    translatedPhrase = translatedPhrase.slice(0, -1) + "!";
+
     console.log(translatedPhrase);
     }
 
