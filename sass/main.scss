@@ -1,9 +1,17 @@
+@font-face{
+    font-family: 'HARRYP';
+    src: url(/stylesheets/fonts/HARRYP__.TTF) format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
 .jumbo-back{
     background-image: url(https://prods3.imgix.net/images/articles/2017_10/news-harry-potter-christmas-dinner.jpg);
     color: rgb(0, 77, 0);
     height: 500px;
     text-align: center;
 }
+
 label{
     color: firebrick;
     border: 1px solid lightblue;
@@ -23,3 +31,15 @@ p{
     color: firebrick;
     justify-content: center;
 }
+
+#text-input{
+    color: firebrick;
+}
+
+
+#card-holder{
+    color: firebrick;
+    font-size: 100px;
+    font-family: 'HARRYP';
+}
+
