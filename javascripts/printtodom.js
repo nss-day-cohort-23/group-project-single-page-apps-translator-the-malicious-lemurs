@@ -7,7 +7,7 @@ function printToDom(phrase) {
 }
 
 function speakPhrase(phrase) {    
-    var msg = new SpeechSynthesisUtterance(`${phrase}`, "UK English Male").{rate: .5};
+    var msg = new SpeechSynthesisUtterance(`${phrase}`);
     window.speechSynthesis.speak(msg);
 }
 
